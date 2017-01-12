@@ -7,12 +7,14 @@
   <meta name="format-detection" content="telephone=no">
   <title>testForPromosite</title>
   <!-- SEO -->
-  <meta name="description" content="ls-web-test">
-  <meta name="keywords" content="ls-web-test">
+  <meta name="description" content="web-test-promosite">
+  <meta name="keywords" content="web-test-promosite">
   <meta name="author" content="Anatoliy Vershinin">
   <!-- favicon.ico -->
   <!-- CSS-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link href="css/libs.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,20 +39,78 @@
 
   <svg display="none"></svg> <!-- svg спрайт -->
 
+
   <div class="wrapper">
-    <div class="container">
-      <h1>Всем привет!</h1>
+    <div class="header">
+      <div class="row header__top">
+        <div class="col-md-4 header__logo">
+            <div class="header__img">
+              <a class="logo" href="#">
+                <img src="img/icons/Asset 1.svg" width="86" height="164" alt="PersonalSite">
+              </a>
+            </div>
+            <div class="header__desc-logo">
+              <div class="header__desc-name">PersonalSite</div>
+              <div class="header__desc-text">лицо успешной компании</div>
+            </div>
+        </div>
+        <div class="col-md-8 header__desc">Собственный сайт: лицо успешной компании</div>
+      </div>
+        <div class="row header__bottom">
+          <div class="container">
+            <nav class="col-lg-8 col-md-offset-4 nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Главная</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">О Компании</a>
+                    <ul class="nav-dropdown">
+                      <li class="nav-dropdown__item">
+                        <a href="#" class="nav-dropdown__link">Компания</a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="#" class="nav-dropdown__link">Новости</a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="#" class="nav-dropdown__link">Статьи</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Услуги</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Портфолио</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
   </div>
-  <footer class="page-footer">
+</div>
+  <footer class="footer">
+      <!-- <div class="row">
+        <div class="block1 col-sm-3 col-md-4 col-lg-3"></div>
+        <div class="block2 col-sm-3 col-md-4 col-lg-3"></div>
+        <div class="block3 col-sm-1 col-md-2 col-lg-3"></div>
+        <div class="block4 col-sm-5 col-md-2 col-lg-3"></div>
+      </div>
     <div class="container">
-
-
-    </div>
+      <div class="row">
+        <div class="block5 col-sm-2 col-md-1 col-lg-3"></div>
+        <div class="block6 col-sm-6 col-md-2 col-lg-3"></div>
+        <div class="block7 col-sm-1 col-md-7 col-lg-3"></div>
+        <div class="block8 col-sm-5 col-md-2 col-lg-3"></div>
+      </div>
+    </div> -->
     <!-- end container -->
   </footer>
 
-  <div class="modal-feedback"></div>
 
   <!-- Query -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>

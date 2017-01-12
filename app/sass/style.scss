@@ -6,12 +6,16 @@
 @import "mixins.scss";
 
 /* Глобальные стили для всего проекта*/
-@import "fonts.scss";
 @import "main.scss";
 
 /* Стили BEM-блоков*/
 // index.html
 @import "blocks/logo.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/nav-dropdown.scss";
+@import "blocks/footer.scss";
+
 
 
 //catalog.html

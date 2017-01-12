@@ -1,0 +1,31 @@
+.nav-dropdown {
+  position: absolute;
+  top: 43px;
+  display: none;
+  width: 157px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  background-color: #ccc;
+  border-top: 2px solid $orange-2;
+}
+.nav-dropdown__item {
+  font-size: 16px;
+  text-align: center;
+}
+.nav-dropdown__link {
+  display: block;
+  padding: 20px 0;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: $opensansemi-bold;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  &:hover {
+    color: $orange-1;
+    text-decoration: none;
+  }
+}
