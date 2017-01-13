@@ -1,0 +1,42 @@
+.promo {
+  position: relative;
+  min-height: 600px;
+  background: #a8a5b9;
+  background-image: url(../../img/bg/rocket-004.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+.promo__title {
+  // position: absolute;
+  top: 200px;
+  // left: 100px;
+}
+.promo__img {
+  width: 86px;
+  height: 168px;
+}
+.promo__desc-logo {
+  margin-left: 5px;
+  color: #fff;
+}
+.promo__img, .promo__desc-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.promo__desc-name {
+  margin-bottom: 25px;
+  font-size: 64px;
+  font-weight: 700;
+}
+.promo__desc-text {
+  font-size: 20px;
+  font-family: $opensansemi-bold;
+}
+.promo__desc {
+  margin-top: 45px;
+  font-size: 35px;
+  line-height: 40px;
+  font-family: $opensans-regular;
+}

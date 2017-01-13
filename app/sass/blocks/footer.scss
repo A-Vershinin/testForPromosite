@@ -1,0 +1,22 @@
+.footer {
+  @extend %clearfix;
+  padding-top: 45px;
+  padding-bottom: 95px;
+  background-color: $orange-1;
+}
+.footer__left {
+  padding-left: 5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer__right {
+  margin-top: 50px;
+}
+.footer__right {
+  .nav-dropdown {
+    padding-top: 15px;
+    .nav-dropdown__link {
+      padding: 8px 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.pagin {
+  margin-bottom: 80px;
+}
+.pagin__btn {
+  text-align: center;
+}
+.pagin__btn-link {
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 61px;
+  background-color: $orange-1;
+  border-color: $orange-1;
+  color: #fff;
+  font-size: 16px;
+  font-family: $opensans-regular;
+  border-radius: 25px;
+  cursor: pointer;
+  box-sizing: border-box;
+  &:hover {
+    text-decoration: none;
+    color: $gray-1;
+  }
+}

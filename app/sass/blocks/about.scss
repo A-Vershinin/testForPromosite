@@ -1,0 +1,117 @@
+.about {
+  @extend %clearfix;
+  padding-top: 45px;
+  margin-bottom: 50px;
+}
+.about__logo {
+  @extend %clearfix;
+  margin-bottom: 30px;
+}
+.about__title {
+  display: inline-block;
+  margin-top: 45px;
+  font-size: 87px;
+  font-weight: 700;
+  font-family: $opensansemi-bold;
+  color: $gray-2;
+}
+.about__blockquote {
+  background-color: #f5f5f5;
+  background-color: #ccc;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $opensanslight-italic;
+  padding: 35px 50px;
+  &:before {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    color: #fff;
+    content: "\201C";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+  }
+  &:after {
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    color: #fff;
+    content: "\201D";
+    font-size: 3em;
+    line-height: 0.3em;
+    vertical-align: -.65em;
+  }
+  span {
+    display: block;
+    padding-top: 15px;
+  }
+}
+.about__desc-block {
+  margin-bottom: 40px;
+  padding-right: 25px;
+}
+.about__pict {
+  max-width: 644px;
+  max-height: 410px;
+}
+.about__text-title {
+  margin-bottom: 25px;
+  font-size: 52px;
+  line-height: 46px;
+  font-family: $opensansemi-bold;
+  font-weight: 700;
+  color: #6d6d6d;
+}
+.about__text {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-family: $opensans-regular;
+  color: $gray-1;
+}
+.about__desc-block p:last-child()  {
+  margin-top: 30px;
+}
+.about__text-lists {
+  @extend %clearfix;
+}
+.about__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  list-style-type: none;
+}
+.about__list-item {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: italic;
+  font-family: $opensanslight-italic;
+  &:before {
+    position: absolute;
+    content: "";
+    left: -5px;
+    border: 5px solid $orange-1;
+    border-radius: 5px;
+  }
+}
+.about__list-number {
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+}
+.about__list-item {
+  font-style: italic;
+}
+.about__list-number-item {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $opensanslight-italic;
+  font-style: italic;
+}
+
+
+// cvc

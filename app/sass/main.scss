@@ -4,9 +4,10 @@ html {
   height: 100%;
 }
 body {
-  min-width: 320px;
   width: 100%;
   height: 100%;
+  min-width: 320px;
+  // min-width: 1330px;
   margin: 0;
   font-size: 15px;
   line-height: 18px;
@@ -53,12 +54,13 @@ input:focus {
 input:invalid {
   border-color: #f0b1b1;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-weight: normal;
 }
 
 img, video {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -67,4 +69,30 @@ img, video {
 }
 .visually-view {
   @include visually-view;
+}
+.padding-cont > [class*='col-'] {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.no-padding > [class*='col-'] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+.wrapper .no-visibility {
+  visibility: hidden;
+}
+.wrapper .hidden {
+  display: none;
+}
+.row--padding-down {
+  padding-bottom: 15px;
+}
+@media (min-width: 1330px) {
+  .wrapper .container {
+    width: 1330px;
+  }
 }

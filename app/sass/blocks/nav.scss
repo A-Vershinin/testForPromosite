@@ -1,12 +1,14 @@
 .nav {
   position: relative;
 }
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
+
 .nav__item {
   display: inline-block;
   vertical-align: top;
@@ -16,53 +18,58 @@
 }
 
 .nav__link {
-    position: relative;
-    display: block;
-    padding: 13px 0;
-    padding-left: 10px;
-    padding-right: 45px;
-    font-size: 14px;
+  position: relative;
+  display: block;
+  padding: 13px 45px 13px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: $opensansemi-bold;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
     text-decoration: none;
-    font-family: $opensansemi-bold;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #000;
-    cursor: pointer;
-    // border-bottom: 2px solid $orange-1;
-    &:hover {
-      background-color: #fff;
-      // border-bottom: 2px solid $light-3;
-      text-decoration: none;
-      &:after {
-        border-top: 10px solid #fff;
-      }
+
+    &:after {
+      border-top: 10px solid #fff;
     }
-    &::before, &::after {
+  }
+
+  &::after,
+  &::before {
     content: '';
     position: absolute;
     top: 16px;
     right: 10px;
     border: 10px solid transparent;
     border-top: 10px solid $gray-1;
-   }
-   &::after {
-   content: '';
-   position: absolute;
-   top: 14px;
-   right: 10px;
-   border: 10px solid transparent;
-   border-top: 10px solid $gray-1;
   }
-   &:after {
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    border: 10px solid transparent;
+    border-top: 10px solid $gray-1;
+  }
+
+  &:after {
     border-top: 10px solid $orange-1;
-   }
+  }
 }
+
 .nav__item:hover {
   & .nav-dropdown {
     display: block;
   }
+
   & .nav__link {
     background-color: #fff;
+
     &:after {
       border-top: 10px solid #fff;
     }

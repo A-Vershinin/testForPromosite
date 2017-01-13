@@ -1,13 +1,15 @@
 .nav-dropdown {
   position: absolute;
+  z-index: 20;
   top: 43px;
   display: none;
   width: 157px;
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
   list-style: none;
   font-size: 0;
-  background-color: #ccc;
+  background-color: #fff;
   border-top: 2px solid $orange-2;
 }
 .nav-dropdown__item {
@@ -16,7 +18,7 @@
 }
 .nav-dropdown__link {
   display: block;
-  padding: 20px 0;
+  padding: 16px 0;
   font-size: 14px;
   text-decoration: none;
   font-family: $opensansemi-bold;

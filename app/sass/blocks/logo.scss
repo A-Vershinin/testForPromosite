@@ -1,0 +1,37 @@
+.logo {
+  max-width: 470px;
+  max-height: 164px;
+}
+.logo__desc {
+  margin-left: 5px;
+}
+.logo__link,
+.logo__caption {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo__caption {
+  margin-left: 15px;
+}
+.logo__caption-name {
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.logo__caption-text {
+  text-align: left;
+  font-size: 19px;
+  font-family: $opensansemi-bold;
+  color: #fff;
+  font-weight: 400;
+}
+.logo__desc {
+  float: right;
+  margin-top: 45px;
+  font-size: 35px;
+  line-height: 40px;
+  font-family: $opensans-regular;
+  color: #fff;
+  text-align: left;
+}
