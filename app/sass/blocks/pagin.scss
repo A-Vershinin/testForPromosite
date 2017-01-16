@@ -21,3 +21,14 @@
     color: $gray-1;
   }
 }
+
+@media (max-width: 768px) {
+  .pagin {
+    margin-bottom: 30px;
+  }
+  .pagin__btn-link {
+    font-size: 14px;
+    padding: 10px 48px;
+    font-size: 14px;
+  }
+}

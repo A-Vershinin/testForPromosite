@@ -20,3 +20,19 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .logo__link  {
+    // display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo__link  {
+    // display: block;
+  }
+}
+@media (max-width: 650px) {
+  .footer__right {
+    margin-top: 0;
+  }
+}

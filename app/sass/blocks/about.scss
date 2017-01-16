@@ -22,7 +22,7 @@
   font-size: 20px;
   line-height: 24px;
   font-family: $opensanslight-italic;
-  padding: 35px 50px;
+  padding: 35px 5.1%; //50
   &:before {
     position: absolute;
     top: 35px;
@@ -50,7 +50,7 @@
 }
 .about__desc-block {
   margin-bottom: 40px;
-  padding-right: 25px;
+  padding-right: 2.5%; //25
 }
 .about__pict {
   max-width: 644px;
@@ -80,7 +80,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 4%;
   list-style-type: none;
 }
 .about__list-item {
@@ -102,6 +102,11 @@
   margin: 0;
   padding: 0;
   padding-right: 30px;
+  float: right;
+}
+.about__list-number,
+.about__list {
+  width: 46%;
 }
 .about__list-item {
   font-style: italic;
@@ -112,6 +117,67 @@
   font-family: $opensanslight-italic;
   font-style: italic;
 }
-
-
-// cvc
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about__title {
+    font-size: 55px;
+  }
+  .about__blockquote {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+  }
+  .about__text-title {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  .about__text {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .about {
+    margin-bottom: 30px;
+  }
+  .about__title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .about__blockquote {
+    &:before {
+      left: 15px;
+    }
+    &:after {
+      right: 43px;
+    }
+  }
+  .about__pict {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .about__desc-block p:last-child()  {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 36px;
+  }
+  .about__blockquote {
+    font-size: 14px;
+    padding: 15px 10%;
+  }
+  .about__text-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .about__desc-block {
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+}

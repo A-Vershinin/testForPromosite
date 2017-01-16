@@ -31,3 +31,20 @@
     text-decoration: none;
   }
 }
+@media (max-width: 1201px) {
+  .nav-dropdown {
+    width: 138px;
+  }
+}
+@media (max-width: 992px) {
+  .nav-dropdown__link {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .nav-dropdown {
+    left: 148px;
+    top: 56px;
+  }
+}

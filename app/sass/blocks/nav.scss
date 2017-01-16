@@ -7,6 +7,9 @@
   padding: 0;
   list-style: none;
   font-size: 0;
+  &--right {
+    margin-left: 20%;
+  }
 }
 
 .nav__item {
@@ -14,7 +17,7 @@
   vertical-align: top;
   font-size: 16px;
   margin-bottom: 20px;
-  padding-right: 13px;
+  padding-right: 1.52%;
 }
 
 .nav__link {
@@ -32,7 +35,6 @@
   &:hover {
     background-color: #fff;
     text-decoration: none;
-
     &:after {
       border-top: 10px solid #fff;
     }
@@ -66,12 +68,73 @@
   & .nav-dropdown {
     display: block;
   }
-
   & .nav__link {
     background-color: #fff;
 
     &:after {
       border-top: 10px solid #fff;
     }
+  }
+}
+@media (min-width: 992px) and(max-width: 1201px) {
+  .nav__list {
+    &--right {
+      margin-left: 20%;
+    }
+  }
+  .nav__item {
+    margin-bottom: 10px;
+  }
+  .nav__link {
+    padding: 13px 45px 13px 5px;
+    font-size: 12px;
+    &--right {
+      margin-left: 5%;
+    }
+  }
+  .nav__link::after {
+    top: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav__list {
+    &--right {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .nav__list {
+    padding: 0;
+    margin-left: 0;
+  }
+  .nav__item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .nav__link {
+    padding: 10px 30px 10px 5px;
+    &::after,
+    &::before {
+      top: 16px;
+      right: 3px;
+    }
+    &::after {
+      top: 14px;
+      right: 3px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .header__bottom {
+    padding: 0 20px;
+  }
+  .nav__list {
+    width: 150px;
+    padding-left: 15px;
+  }
+  .nav__item {
+    display: block;
   }
 }

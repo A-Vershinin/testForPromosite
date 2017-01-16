@@ -1,6 +1,7 @@
 .logo {
   max-width: 470px;
   max-height: 164px;
+  text-align: center;
 }
 .logo__desc {
   margin-left: 5px;
@@ -10,9 +11,13 @@
   display: inline-block;
   vertical-align: middle;
 }
-.logo__caption {
-  margin-left: 15px;
-}
+// .logo__link {
+//   width: 86px;
+//   height: 186px;
+// }
+// .logo__caption {
+//   margin-left: 3%;
+// }
 .logo__caption-name {
   margin-bottom: 15px;
   font-size: 48px;
@@ -34,4 +39,33 @@
   font-family: $opensans-regular;
   color: #fff;
   text-align: left;
+}
+@media (max-width: 1480px) {
+  // .logo {
+  //   max-width: 56px;
+  //   max-height: 120px;
+  // }
+  .logo__link {
+    max-width: 56px;
+    max-height: 120px;
+  }
+  .logo__caption-name {
+    font-size: 32px;
+  }
+  .logo__caption-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1005px) {
+  .logo__caption-text {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .logo__caption {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+
 }

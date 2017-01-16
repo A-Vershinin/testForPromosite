@@ -40,3 +40,24 @@
   line-height: 40px;
   font-family: $opensans-regular;
 }
+@media (max-width: 992px) {
+  .promo {
+    min-height: 480px;
+    background-position: 60%;
+  }
+  .promo__title {
+    margin-left: 8%;
+    top: 150px;
+  }
+  .promo__img {
+    width: 52px;
+    height: 120px;
+  }
+  .promo__desc-name {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .promo__desc-text  {
+    font-size: 16px;
+  }
+}

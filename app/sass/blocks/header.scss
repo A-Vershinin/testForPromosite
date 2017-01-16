@@ -20,3 +20,13 @@
   color: #fff;
   text-align: left;
 }
+@media (max-width: 1480px) {
+  .header__right {
+    font-size: 26px;
+  }
+}
+@media (max-width: 650px) {
+  .header__right {
+    margin-top: 15px;
+  }
+}
